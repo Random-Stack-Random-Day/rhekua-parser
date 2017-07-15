@@ -71,11 +71,11 @@ checkDb()
 
 
 ##
-## #Save to CSV
+## #Save to CSV -- This will parse from Rhekua by default. If you need to output DB -> CSV, just implement this function into the checkDb() function
 ##ofile = open('output2.csv','wb')
 ##fieldname = ['name', 'discountPrice', 'originalPrice', 'percentOff']
 ##writer = csv.DictWriter(ofile, fieldnames = fieldname)
 ##writer.writeheader()
 ##for i in range(len(names)):
-## writer.writerow({'name': names[i], 'discountPrice':pricing[i], 'originalPrice': discounts[i], 'percentOff': discountPct[i].strip('\n\r\t')})
+## writer.writerow({'name': names[i], 'discountPrice':pricing[i], 'originalPrice': discounts[i], 'percentOff': discountPct[i].strip('\n\r\t')}) # Rhekua use only. Excess linebreaks.
 ##ofile.close()
